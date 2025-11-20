@@ -20,7 +20,7 @@ export default function NativeCameraCapture() {
     reader.readAsDataURL(file);
 
     // 👉 file을 그대로 서버에 업로드 가능 (S3, 서버 API 등)
-    alert(`촬영된 원본 파일: ${JSON.stringify(file)}`);
+    alert(`촬영된 원본 파일: ${file.name}`);
   };
 
   return (
